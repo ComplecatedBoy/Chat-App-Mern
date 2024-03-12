@@ -7,7 +7,7 @@ import { ToastContainer,toast} from "react-toastify";
 import { setAvatarRoute } from "../utils/APIRoutes.js";
 
 const SetAvatar = () => {
-  const api = "https://api.multiavatar.com/3439";
+  const api = `https://api.multiavatar.com/${import.meta.env.VITE_AVATAR_KEY}`;
   const navigate = useNavigate();
   const [avatars, setAvatars] = useState([]);
   const [loading, setLoading] = useState(true);
