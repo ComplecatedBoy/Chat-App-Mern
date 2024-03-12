@@ -1,6 +1,6 @@
-import dotenv from "dotenv"
-dotenv.config();
-export const host=process.env.SERVER_URL;
+// import dotenv from "dotenv"
+// dotenv.config();
+export const host=`${import.meta.env.VITE_SERVER_URL}`;
 export const setAvatarRoute=`${host}api/auth/setAvatar`;
 export const loginRoute=`${host}api/auth/login`;
 export const registerRoute=`${host}api/auth/signup`;
